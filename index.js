@@ -16,6 +16,8 @@ async function handleClick() {
     remainingText.textContent = `Remaining cards: ${data.remaining}`
     deckId = data.deck_id
     console.log(deckId)
+    remainingText.style.display = "inline"
+    
 }
 
 newDeckBtn.addEventListener("click", handleClick)
